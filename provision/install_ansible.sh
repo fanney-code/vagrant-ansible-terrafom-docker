@@ -122,7 +122,7 @@ cat <<EOF >  /home/vagrant/ansible/stop_nginx.yml
   hosts: workers
   become: yes
   tasks:
-    - name: Stop nignx
+    - name: Stop nginx
       service:
         name: nginx
         state: stopped
